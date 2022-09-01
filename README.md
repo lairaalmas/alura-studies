@@ -1,44 +1,43 @@
-# Getting Started with Create React App
+# Alura Studies
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Projeto desenvolvido durante o curso da Alura de [React: escrevendo com Typescript](https://cursos.alura.com.br/course/react-modernizando-escrever-typescript)
 
-### `npx create-react-app APPNAME --template typescript`
+### Tecnologias
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [React](https://reactjs.org/)
+- [Typescript](https://www.typescriptlang.org/)
+- [JSX](https://reactjs.org/docs/introducing-jsx.html)
+- [Sass](https://sass-lang.com/)
+- [CSS Modules](https://www.google.com/search?channel=fs&client=ubuntu&q=typescript+plugin+css+modules)
 
 ---
 
-## Styling with Sass
+### This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### `npm install --save-dev sass`
+#### `npx create-react-app APPNAME --template typescript`
+
+#### `npm start`
+
+---
+
+### Style
+
+- Install Sass
+
+#### `npm install --save-dev sass`
+
+- Install Css Modules
+
+#### `npm install -D typescript-plugin-css-modules`
+
+Add this to **tsconfig.json**:
+
+```
+{
+	"compilerOptions": {
+		"plugins": [{ "name": "typescript-plugin-css-modules" }]
+	}
+}
+```
+
+And (if needed) [use workspace version of typescript](https://code.visualstudio.com/docs/typescript/typescript-compiling#_using-the-workspace-version-of-typescript)
