@@ -9,18 +9,18 @@ interface Props {
   selecionado: ITarefa | undefined;
   finalizarTarefa: () => void;
 }
+
 export default function Cronometro({ selecionado, finalizarTarefa }: Props) {
   const [tempo, setTempo] = useState<number>();
 
   useEffect(() => {
-    // "Optional chaining"
-    // if (selecionado?.tempo) é o mesmo que if (selecionado && selecionado.tempo)
+    // "Optional chaining" - if (selecionado?.tempo) é o mesmo que if (selecionado && selecionado.tempo)
     if (selecionado?.tempo) {
       setTempo(tempoParaSegundos(selecionado.tempo));
     }
   }, [selecionado]);
 
-  // se contador for undefined coloca 0
+  // se contador for undefined recebe 0
   function regressiva(contador: number = 0) {
     setTimeout(() => {
       if (contador > 0) {

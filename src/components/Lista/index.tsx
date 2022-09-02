@@ -6,7 +6,8 @@ interface Props {
   tarefas: ITarefa[];
   selecionaTarefa: (tarefaSelecionada: ITarefa) => void;
 }
-function Lista({ tarefas, selecionaTarefa }: Props) {
+
+export default function Lista({ tarefas, selecionaTarefa }: Props) {
   return (
     <aside className={style.listaTarefas}>
       <h2>Estudos do dia</h2>
@@ -18,5 +19,3 @@ function Lista({ tarefas, selecionaTarefa }: Props) {
     </aside>
   );
 }
-
-export default Lista;
