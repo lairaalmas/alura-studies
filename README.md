@@ -9,6 +9,7 @@
 - [JSX](https://reactjs.org/docs/introducing-jsx.html)
 - [Sass](https://sass-lang.com/)
 - [CSS Modules](https://www.google.com/search?channel=fs&client=ubuntu&q=typescript+plugin+css+modules)
+- [uuid](https://www.npmjs.com/package/uuid)
 
 ---
 
@@ -41,3 +42,9 @@ Add this to **tsconfig.json**:
 ```
 
 And (if needed) [use workspace version of typescript](https://code.visualstudio.com/docs/typescript/typescript-compiling#_using-the-workspace-version-of-typescript)
+
+- Install uuid
+
+#### `npm i uuid`
+
+#### `npm i --save-dev @types/uuid`
