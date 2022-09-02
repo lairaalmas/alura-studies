@@ -8,8 +8,8 @@ class Formulario extends React.Component<{
   setTarefas: React.Dispatch<React.SetStateAction<ITarefa[]>>;
 }> {
   state = {
-    tarefa: "",
-    tempo: "00:00",
+    tarefa: "Tarefa",
+    tempo: "00:00:000",
   };
   adicionarTarefa(evento: React.FormEvent<HTMLFormElement>) {
     evento.preventDefault();
@@ -22,7 +22,7 @@ class Formulario extends React.Component<{
         id: uuidv4(),
       },
     ]);
-    this.setState({ tarefa: "", tempo: "00:00:00" });
+    this.setState({ tarefa: "Tarefa", tempo: "00:00:00" });
   }
   render() {
     return (
